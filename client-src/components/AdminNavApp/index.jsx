@@ -51,7 +51,7 @@ export default class AdminNavApp extends React.Component {
       <div className="grid grid-cols-12 gap-4 bg-white flex items-center border-b drop-shadow-sm">
         <div className="col-span-2 py-4 px-4 xl:px-8">
           <a href={OUR_BRAND.whatsnewWebsite} target="_blank" className="hover:opacity-50">
-            <img src="/assets/brands/microfeed/horizontal-logo.png" className="w-full"/>
+            <img src="/assets/brands/microfeed/tt-moto-coder-pics.jpg" className="w-full"/>
           </a>
         </div>
         <div className="col-span-10 flex items-center">
@@ -75,7 +75,7 @@ export default class AdminNavApp extends React.Component {
         <div className="col-span-2 bg-brand-dark flex-none">
           <nav className="py-8">
             <NavItem
-              url={ADMIN_URLS.home()}
+              url={ADMIN_URLS.home()} // ttMark 这些是左边的侧面导航栏
               title={NAV_ITEMS_DICT[NAV_ITEMS.ADMIN_HOME].name}
               navId={NAV_ITEMS.ADMIN_HOME}
               currentId={currentPage}
