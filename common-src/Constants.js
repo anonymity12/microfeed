@@ -129,8 +129,8 @@ export const PREDEFINED_SUBSCRIBE_METHODS = {
 export const OUR_BRAND = {
   domain: 'microfeed.org',
   brandName: 'microfeed',
-  whatsnewEndpoint: 'https://www.microfeed.org/json/',
-  whatsnewWebsite: 'https://www.microfeed.org',
+  whatsnewEndpoint: 'https://tt-moto-coder-pics.pages.dev/json/',
+  whatsnewWebsite: 'https://tt-moto-coder-pics.pages.dev/',
   exampleCdnUrl: 'https://media-cdn.microfeed.org',
 };
 
