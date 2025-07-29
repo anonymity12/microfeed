@@ -2,7 +2,7 @@ import { JsonResponseBuilder } from "../common/PageUtils";
 import { STATUSES } from "../../common-src/Constants";
 import { getIdFromSlug } from "../../common-src/StringUtils";
 import { S3Client } from "@aws-sdk/client-s3";
-import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
+import { getSignedUrl } from "@aws-sdk/s3-request-presigner";// ttmark aws-sdk is used
 import { PutObjectCommand } from "@aws-sdk/client-s3";
 import { projectPrefix } from "../../common-src/R2Utils";
 
@@ -48,7 +48,7 @@ export async function onFetchItemRequestGet({ params, env, request }, checkIsAll
 //
 // Fetch presigned url from R2
 //
-
+// ttmark here is where we use the AWS SDK to generate a presigned URL for uploading files to R2 storage
 async function getPresignedUrlFromR2(env, bucket, inputParams) {
   const { key } = inputParams;
   const accessKeyId = `${env.R2_ACCESS_KEY_ID}`;
